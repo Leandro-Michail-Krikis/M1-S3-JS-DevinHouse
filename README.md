@@ -1,20 +1,24 @@
 # M1-S3-JS-DevinHouse
 
-#### Em um arquivo app.js (incluído em index.html) faça o seguinte:
+Para treinar os conceitos de Spread.
 
-#### No documento js faça uma arrow function para retornar uma mensagem (string) de "Olá, Mundo!".
+Crie dois arquivos:
+- **index.html**
+- **app.js**
 
-#### Armazene esta arrow function em uma constante (const) de nome mensagemOla.
+Em **app.js** desenvolva uma função que receba **dois arrays** e realize a **concatenação** entre eles utilizando o operador **Spread**.
+Apresente o resultado no console.log(novoArray).
 
-#### Chame a função mensagemOla e exiba o retorno desta função no console.
+> Exemplo:
 
-#### Ajuste a função mensagemOla para que receba um parâmetro nome e retorne a mensagem "Olá, [nome]!".
+    const novoArray = concatena([1, 2, 3], [4, 5, 6]);
+    console.log(novoArray);
+    // novo array deve ser [1, 2, 3, 4, 5, 6]
 
-Exemplo:
+**Obs.:** Em **index.html** deve ser incluído o arquivo **app.js**, para executarmos o script com a função.
 
-mensagemOla("Mariana");
-// "Olá, Mariana!"
-Ao final, devemos ter uma função que monta uma mensagem de olá customizada com o nome informado por parâmetro.
+> Dica:
+> https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
-Dica:
-Arrow functions - JavaScript | MDN
+---
+Extra: Faça com uma arrow function.

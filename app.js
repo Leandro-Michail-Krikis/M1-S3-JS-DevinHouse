@@ -1,21 +1,9 @@
-const mensagemOla = (nome) => {
-    return `Olá, ${nome}`
-}
+const concatena = (firstArray, secondArray) => {
+  return [ ...firstArray, ...secondArray];
+};
 
-while (true) {
-  const entrada = prompt(
-    "Coloque seu nome ou escreve 'PARE' para parar."
-  );
-
-  if (entrada.toUpperCase() == "PARE") {
-    alert("O programa vai parar.");
-    break;
-  }
-
-  alert(mensagemOla(entrada))
-  
-
-
-}
-
+const arrayOne = [1, 2, 3];
+const arrayTwo = [4, 5, 6];
+const arraysCombined = concatena(arrayOne, arrayTwo);
+alert(arraysCombined);
 
