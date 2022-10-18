@@ -1,8 +1,17 @@
-const sumAll = (...args) => {
-  soma = 0;
-  args.forEach((element) => (soma += element));
-  return soma;
+const verificaPalindromo = (palavra) => {
+  const temp = palavra.split("").reverse().join("");
+  return palavra == temp;
 };
 
-console.log(sumAll(1, 2, 3, 4, 5));
-alert(sumAll(1, 2, 3, 4, 5));
+while (true) {
+  const entrada = prompt(
+    "Coloque uma palavra para ser verificada se e um palíndromo ou escreve 'PARE' para parar."
+  );
+
+  if (entrada.toUpperCase() == "PARE") {
+    alert("O programa vai parar.");
+    break;
+  }
+
+  alert(`A palavra "${entrada}" ${verificaPalindromo(entrada) ? '' : 'não'} e um palíndromo`)
+}

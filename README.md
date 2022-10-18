@@ -1,24 +1,18 @@
 # M1-S3-JS-DevinHouse
 
-Para treinar os conceitos de Rest.
+Um palindrome (palíndromo), segundo o dicionário Houaiss,
+"diz-se de frase ou palavra que se pode ler, indiferentemente, da esquerda para direita ou vice-versa", como por exemplo: osso, Ana, radar.
 
-Crie dois arquivos:
-- index.html
-- app.js
+Ou seja, é uma palavra que quando lida de trás pra frente tem o mesmo significado.
 
-No arquivo apps.js, utilizando o operador Rest, crie uma função que receba como parâmetro uma quantidade indefinida de variáveis inteiras (números inteiros).
-
-A função deve retornar a soma de todos os parâmetros (...).
-Após executada a função, o resultado deve ser exibido no console.
+Implemente uma função em JavaScript que receba uma string como parâmetro e retorne se determinada palavra é um palindromo ou não.
 
 Exemplo:
 
-const resultado = somaTudo(1, 2, 3, 4);
-console.log(resultado);
-// resultado deve ser 10
-Obs.: Em index.html deve ser incluído o arquivo app.js, para rodar o script e executarmos a função.
+const teste1 = verificaPalindromo("ana");
+// true
 
-Dica:
-Parâmetros Rest - JavaScript | MDN
-
+const teste2 = verificaPalindromo("julia");
+// false
+Obs.: Use let e const para declarar variáveis se for necessário.
 Extra: Faça com uma arrow function.
