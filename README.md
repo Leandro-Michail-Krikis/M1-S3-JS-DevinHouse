@@ -1,24 +1,15 @@
 # M1-S3-JS-DevinHouse
 
-Para treinar os conceitos de Spread.
-
-Crie dois arquivos:
-- **index.html**
-- **app.js**
-
-Em **app.js** desenvolva uma função que receba **dois arrays** e realize a **concatenação** entre eles utilizando o operador **Spread**.
-Apresente o resultado no console.log(novoArray).
+Para exercitarmos *spread* com objetos:
+Em um arquivo **app.js** incluído em **index.html** escreva uma função de nome **mesclaObjetos**, que aceita dois objetos como parâmetro e retorna um novo objeto que contem todos os pares chave-valor do primeiro e do segundo objetos.
 
 > Exemplo:
 
-    const novoArray = concatena([1, 2, 3], [4, 5, 6]);
-    console.log(novoArray);
-    // novo array deve ser [1, 2, 3, 4, 5, 6]
-
-**Obs.:** Em **index.html** deve ser incluído o arquivo **app.js**, para executarmos o script com a função.
-
-> Dica:
-> https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    const objUm = { a: 1, b: 2 };
+    const objDois = { c: 3, d: 4 };
+    const novoObjeto = mesclaObjetos(objUm, objDois);
+    console.log(novoObjeto);
+    // { a: 1, b: 2, c: 3, d: 4 }
 
 ---
-Extra: Faça com uma arrow function.
+Extra: Faça utilizando arrow function.
