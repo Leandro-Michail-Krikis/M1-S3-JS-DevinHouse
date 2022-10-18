@@ -1,15 +1,24 @@
 # M1-S3-JS-DevinHouse
 
-Para exercitarmos *spread* com objetos:
-Em um arquivo **app.js** incluído em **index.html** escreva uma função de nome **mesclaObjetos**, que aceita dois objetos como parâmetro e retorna um novo objeto que contem todos os pares chave-valor do primeiro e do segundo objetos.
+Para treinar os conceitos de Rest.
 
-> Exemplo:
+Crie dois arquivos:
+- index.html
+- app.js
 
-    const objUm = { a: 1, b: 2 };
-    const objDois = { c: 3, d: 4 };
-    const novoObjeto = mesclaObjetos(objUm, objDois);
-    console.log(novoObjeto);
-    // { a: 1, b: 2, c: 3, d: 4 }
+No arquivo apps.js, utilizando o operador Rest, crie uma função que receba como parâmetro uma quantidade indefinida de variáveis inteiras (números inteiros).
 
----
-Extra: Faça utilizando arrow function.
+A função deve retornar a soma de todos os parâmetros (...).
+Após executada a função, o resultado deve ser exibido no console.
+
+Exemplo:
+
+const resultado = somaTudo(1, 2, 3, 4);
+console.log(resultado);
+// resultado deve ser 10
+Obs.: Em index.html deve ser incluído o arquivo app.js, para rodar o script e executarmos a função.
+
+Dica:
+Parâmetros Rest - JavaScript | MDN
+
+Extra: Faça com uma arrow function.

@@ -1,9 +1,8 @@
-const concatena = (firstobj, secondobj) => {
-  return { ...firstobj, ...secondobj};
+const sumAll = (...args) => {
+  soma = 0;
+  args.forEach((element) => (soma += element));
+  return soma;
 };
 
-const objOne = { a: 1, b: 2 };
-const objTwo = { c: 3, d: 4 };
-const objsCombined = concatena(objOne, objTwo);
-alert(JSON.stringify(objsCombined));
-
+console.log(sumAll(1, 2, 3, 4, 5));
+alert(sumAll(1, 2, 3, 4, 5));
