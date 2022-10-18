@@ -1,15 +1,20 @@
 # M1-S3-JS-DevinHouse
 
-#### Implemente uma função "procuraMinMax" que receba como parâmetro um array (numérico) e identifique o menor e o maior valor do mesmo.
+#### Em um arquivo app.js (incluído em index.html) faça o seguinte:
 
-#### Imprima no console estes valores ou "Não é possível encontrar" quando não for possível.
+#### No documento js faça uma arrow function para retornar uma mensagem (string) de "Olá, Mundo!".
 
-#### Teste a função com as seguintes entradas:
+#### Armazene esta arrow function em uma constante (const) de nome mensagemOla.
 
-[56, 65, 64, -3, 23, 42, -15, 65, 14, 32, 78, 70, 47]
-[]
-[1]
-[1, -1]
-null
-[-2,-2,-2,-2]
-[20,10, 30]
+#### Chame a função mensagemOla e exiba o retorno desta função no console.
+
+#### Ajuste a função mensagemOla para que receba um parâmetro nome e retorne a mensagem "Olá, [nome]!".
+
+Exemplo:
+
+mensagemOla("Mariana");
+// "Olá, Mariana!"
+Ao final, devemos ter uma função que monta uma mensagem de olá customizada com o nome informado por parâmetro.
+
+Dica:
+Arrow functions - JavaScript | MDN
