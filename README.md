@@ -1,18 +1,17 @@
 # M1-S3-JS-DevinHouse
 
-Um palindrome (palíndromo), segundo o dicionário Houaiss,
-"diz-se de frase ou palavra que se pode ler, indiferentemente, da esquerda para direita ou vice-versa", como por exemplo: osso, Ana, radar.
+Em um arquivo app.js incluído em index.html, crie um objeto com a seguinte estrutura:
 
-Ou seja, é uma palavra que quando lida de trás pra frente tem o mesmo significado.
+    const pessoa = {
+    nome: 'Ada',
+    idade: 36
+    profissao: 'matemática'
+    };
+Faça uma função que receba este objeto por parâmetro, desestruture-o no começo da função (utilizando destruct) criando três variáveis (nome, idade, profissao).
 
-Implemente uma função em JavaScript que receba uma string como parâmetro e retorne se determinada palavra é um palindromo ou não.
+Faça ainda com que a função retorne uma string com a seguinte mensagem:
 
-Exemplo:
+    "Esta é Ada, tem 36 anos e é matemática."
+Concatene as variáveis criadas com destruct para formar a mensagem.
 
-const teste1 = verificaPalindromo("ana");
-// true
-
-const teste2 = verificaPalindromo("julia");
-// false
-Obs.: Use let e const para declarar variáveis se for necessário.
-Extra: Faça com uma arrow function.
+Chame a função passando o objeto por parâmetro e exiba o retorno no console.

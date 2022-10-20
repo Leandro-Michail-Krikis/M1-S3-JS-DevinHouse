@@ -1,11 +1,10 @@
-const verificaPalindromo = (palavra) => {
-  const temp = palavra.split("").reverse().join("");
-  return palavra == temp;
+const returnGreeting = ({nome, idade, profissao}) => {
+  return `Esta é ${nome}, tem ${idade} e é ${profissao}`
 };
 
 while (true) {
   const entrada = prompt(
-    "Coloque uma palavra para ser verificada se e um palíndromo ou escreve 'PARE' para parar."
+    "Coloque o objeto pessoa ou escreve 'PARE' para parar."
   );
 
   if (entrada.toUpperCase() == "PARE") {
@@ -13,5 +12,5 @@ while (true) {
     break;
   }
 
-  alert(`A palavra "${entrada}" ${verificaPalindromo(entrada) ? '' : 'não'} e um palíndromo`)
+  alert(returnGreeting(JSON.parse(entrada)))
 }
