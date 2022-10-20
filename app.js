@@ -1,16 +1,16 @@
-const returnGreeting = ({nome, idade, profissao}) => {
-  return `Esta é ${nome}, tem ${idade} e é ${profissao}`
+const uneDobraRetorna = (array, ...numeros) => {
+  numeros.forEach(element => {
+    array.push(element * 2)
+  })
+  return array
 };
 
-while (true) {
-  const entrada = prompt(
-    "Coloque o objeto pessoa ou escreve 'PARE' para parar."
-  );
 
-  if (entrada.toUpperCase() == "PARE") {
-    alert("O programa vai parar.");
-    break;
-  }
+const r1 = uneDobraRetorna([1, 2, 3], 4, 4)
+console.log(r1) // [1, 2, 3, 8, 8]
 
-  alert(returnGreeting(JSON.parse(entrada)))
-}
+const r2 = uneDobraRetorna([2], 10, 4, 8) 
+console.log(r2) // [2, 20, 8, 16]
+
+const r3 = uneDobraRetorna([6, 8]) 
+console.log(r3) // [6, 8]

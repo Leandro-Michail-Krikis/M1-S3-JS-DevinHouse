@@ -1,17 +1,16 @@
 # M1-S3-JS-DevinHouse
 
-Em um arquivo app.js incluído em index.html, crie um objeto com a seguinte estrutura:
+Para exercitarmos rest e repetições com vetores:
 
-    const pessoa = {
-    nome: 'Ada',
-    idade: 36
-    profissao: 'matemática'
-    };
-Faça uma função que receba este objeto por parâmetro, desestruture-o no começo da função (utilizando destruct) criando três variáveis (nome, idade, profissao).
+Em um arquivo app.js incluído em index.html escreva uma função arrow e armazene-a em uma variável de nome uneDobraRetorna, que aceita um array de números e qualquer outra quantidade de números como parâmetro. A função deve retornar um novo vetor que começa com o vetor inicial concatenado com os outros parâmetros extra dobrados de valor.
 
-Faça ainda com que a função retorne uma string com a seguinte mensagem:
+Exemplo:
 
-    "Esta é Ada, tem 36 anos e é matemática."
-Concatene as variáveis criadas com destruct para formar a mensagem.
+    const r1 = uneDobraRetorna([1, 2, 3], 4, 4)
+    console.log(r1) // [1, 2, 3, 8, 8]
 
-Chame a função passando o objeto por parâmetro e exiba o retorno no console.
+    const r2 = uneDobraRetorna([2], 10, 4, 8) 
+    console.log(r2) // [2, 20, 8, 16]
+
+    const r3 = uneDobraRetorna([6, 8]) 
+    console.log(r3) // [6, 8]
